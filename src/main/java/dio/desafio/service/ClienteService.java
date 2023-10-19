@@ -17,11 +17,15 @@ import dio.desafio.model.Cliente;
  * Autor: Ignacio-fabiana maria
  */
 public interface ClienteService {
-   Iterable<Cliente> buscarTodos();
-   Cliente buscarPorId(Long id);
 
-   public void inserir(Cliente cliente);
-   public void atualizar(Long id, Cliente cliente);
-   public void deletar(Long id);
+	Iterable<Cliente> buscarTodos();
+
+	Cliente buscarPorId(Long id);
+
+	void inserir(Cliente cliente);
+
+	void atualizar(Long id, Cliente cliente);
+
+	void deletar(Long id);
 
 }
